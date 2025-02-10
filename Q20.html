@@ -7,13 +7,19 @@
 </head>
 <body>
     <script>
+        let a =prompt("enter the number :")
 
-
-        for(let i='A';i<='j';i++)
+        for(let i=1;i<=a;i++)
     {
-        for(let j='A';j<=i;j++)
+        for(let j=i;j>=1;j--)
     {
-        document.write(j+" ")
+        if(j%2==1)
+    {
+        document.write("- ")
+    }
+    else{
+        document.write("| ")
+    }
     }
     document.write("<br>")
     }
